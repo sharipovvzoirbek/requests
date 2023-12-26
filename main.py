@@ -49,7 +49,9 @@ file.write(f"Foydalanuvchi ijtimoiy raqami: {respons['social_insurance_number']}
 
 file.write(f"Foydalanuvchi tug'ulgan sanasi: {respons['date_of_birth']} \n")
 
-file.write(f"Foydalanuvchi ishi to'g'risida: {respons['employment']} \n")
+work = respons['employment']
+
+file.write(f"Foydalanuvchi  lavozimi: {work['title']},iqtidori: {work['key_skill']}   \n")
 
 address = respons['address']
 
